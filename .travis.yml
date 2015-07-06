@@ -23,6 +23,6 @@ php:
 
 # omitting "script:" will default to phpunit
 script: 
-ls -lash
-phpunit --bootstrap src/autoload.php tests/MoneyTest
+	- ls -lash
+	- phpunit --bootstrap src/autoload.php tests/MoneyTest
 
