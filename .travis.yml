@@ -21,8 +21,10 @@ php:
   # aliased to a recent hhvm version
   - hhvm
 
+before_script:
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+
 # omitting "script:" will default to phpunit
-script: 
-	- ls -lash
-	- phpunit --bootstrap src/autoload.php tests/MoneyTest
+script: phpunit --bootstrap src/autoload.php tests/MoneyTest
 
