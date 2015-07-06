@@ -19,8 +19,8 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --prefer-source --no-interaction --dev
+  - composer install --prefer-source --no-interaction
 
 # omitting "script:" will default to phpunit
-script: phpunit --bootstrap src/autoload.php tests/MoneyTest
+script: phpunit --bootstrap money/src/autoload.php money/tests/MoneyTest
 
