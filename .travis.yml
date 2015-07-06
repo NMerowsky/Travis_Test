@@ -22,4 +22,7 @@ php:
   - hhvm
 
 # omitting "script:" will default to phpunit
-script: phpunit --bootstrap src/autoload.php tests/MoneyTest
+script: 
+ls -lash
+phpunit --bootstrap src/autoload.php tests/MoneyTest
+
